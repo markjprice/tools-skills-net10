@@ -6,6 +6,8 @@ Repository for the Packt Publishing book titled "Tools and Skills for .NET 10" b
 
 > *Get the career you want with good practices and patterns to design, debug, and test your solutions*
 
+> **[FAQs](https://github.com/markjprice/markjprice/blob/main/FAQs.md)**
+
 The book is planned to publish in February 2026.
 
 If you have purchased the paperback or Kindle edition, then you can request a free PDF copy at the following link: https://www.packtpub.com/page/free-ebook. It often takes a week or two for the free PDF to become available after publishing date so please be patient.
