@@ -22,4 +22,9 @@ public class UserService
 
     return successfulEmailSend && successfulUserCreation;
   }
+
+  public bool IsAdult(User user)
+  {
+    return user.DateOfBirth <= DateTime.Now.AddYears(-18);
+  }
 }

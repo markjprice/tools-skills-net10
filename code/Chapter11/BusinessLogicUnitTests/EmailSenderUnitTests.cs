@@ -1,4 +1,5 @@
 ﻿using NSubstitute; // To use Substitute.
+using NSubstitute.Core;
 using Packt.Shared; // To use IEmailSender.
 using Xunit.Abstractions; // To use ITestOutputHelper.
 
@@ -29,7 +30,7 @@ public class EmailSenderUnitTests
         to: Arg.Is<string>(s => s.EndsWith("example.com")),
         subject: Arg.Any<string>(), 
         body: Arg.Any<string>()))
-      .Do(x => _output.WriteLine("Email sent to example domain."));
+      .Do(callInfo => _output.WriteLine("Email sent to example domain."));
 
     UserService sut = new(emailSender);
     #endregion
