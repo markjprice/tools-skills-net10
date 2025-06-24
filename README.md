@@ -10,9 +10,11 @@ Repository for the Packt Publishing book titled "Tools and Skills for .NET 10" b
 
 The book is planned to publish in February 2026.
 
-If you have purchased the paperback or Kindle edition, then you can request a free PDF copy at the following link: https://www.packtpub.com/page/free-ebook. It often takes a week or two for the free PDF to become available after publishing date so please be patient.
+# Free PDF of the book and how to contact the publisher Packt
 
-> You can direct technical issues with their website and subscriptions to my publisher's customer service at customercare@packt.com.
+If you have purchased the paperback or Kindle edition, then you can request a free PDF copy and its supplementary content (like Appendix - Answers to the Test Your Knowledge Questions and Graphics Bundle PDF) at the following link: https://packt.link/supplementary-content-9781835882504. 
+
+For questions about book pricing, distribution, and so on, please contact the publisher Packt at the following email address: customercare@packt.com
 
 ## Author's books
 
@@ -54,6 +56,10 @@ My author page on Goodreads: https://www.goodreads.com/author/show/14224500.Mark
 - Chapter 17 Design Patterns and Principles
 - Chapter 18 Software and Solution Architecture Foundations
 - Chapter 19 Your Career, Teamwork, and Interviews
+
+**Appendix**
+- *Appendix A, Answers to the Test Your Knowledge Questions*, is included in the free PDF bundle: https://packt.link/supplementary-content-9781835882504.
+- *Appendix B, Setting Up Your Development Environment*, is included in the free PDF bundle: https://packt.link/supplementary-content-9781835882504.
 
 ## Code editors and the solutions
 
