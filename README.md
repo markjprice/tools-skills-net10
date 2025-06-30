@@ -41,7 +41,7 @@ My author page on Goodreads: https://www.goodreads.com/author/show/14224500.Mark
 - Chapter 6 Documenting Code, APIs, and Services: [code/Chapter06](code/Chapter06)
 - Chapter 7 Observing and Modifying Code Execution Dynamically: [code/Chapter07](code/Chapter07)
 - Chapter 8 Protecting Data and Apps Using Cryptography: [code/Chapter08](code/Chapter08)
-- Chapter 9 ?: [code/Chapter09](code/Chapter09)
+- Chapter 9 Multitasking and Concurrency: [code/Chapter09](code/Chapter09)
 - Chapter 10 Dependency Injection, Containers, and Service Lifetime: [code/Chapter10](code/Chapter10)
 
 **Testing**
@@ -67,13 +67,6 @@ My author page on Goodreads: https://www.goodreads.com/author/show/14224500.Mark
 Visual Studio, Rider, and VS Code + C# Dev Kit can use the same code solution files and projects for each chapter, found here: [/code](/code). 
 
 > **Warning!** If you use multiple code editors to open these solutions, be aware that the build process can conflict. This is because Visual Studio has its own non-standard build server that is different from the standard build server used by .NET SDK CLI. My recommendation is to only have a solution open in one code editor at any time. You should also clean the solutions between opening in different code editors. For example, after closing the solution in one code editor, I delete the `bin` and `obj` folders before then opening in a different code editor.
-
-## Bonus content
-
-The appendix and color figures are available to download as PDFs:
-
-- Appendix A, Answers to the Test Your Knowledge Questions: coming February 2026
-- Color images of the screenshots/diagrams used in this book: coming February 2026
 
 ## Important
 
