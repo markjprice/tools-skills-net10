@@ -33,10 +33,7 @@
   - [General security knowledge](#general-security-knowledge)
   - [Encryption](#encryption)
   - [Authentication](#authentication)
-- [Chapter 9 - Building a Custom LLM-based Chat Service](#chapter-9---building-a-custom-llm-based-chat-service)
-  - [OpenAI](#openai)
-  - [Semantic Kernel](#semantic-kernel)
-  - [Local models](#local-models)
+- [Chapter 9 - Multitasking and Concurrency](#chapter-9---multitasking-and-concurrency)
 - [Chapter 10 - Dependency Injection, Containers and Service Lifetime](#chapter-10---dependency-injection-containers-and-service-lifetime)
 - [Chapter 11 - Unit Testing and Mocking](#chapter-11---unit-testing-and-mocking)
 - [Chapter 12 - Integration and Security Testing](#chapter-12---integration-and-security-testing)
@@ -329,46 +326,19 @@
 - [OAuth 2.0 and OpenID Connect stack for .NET](https://github.com/openiddict)
 - [Security Development Lifecycle (SDL)](https://learn.microsoft.com/en-us/security/sdl/cryptographic-recommendations)
 
-# Chapter 9 - Building a Custom LLM-based Chat Service
+# Chapter 9 - Multitasking and Concurrency
 
-## OpenAI
-- [Announcing the stable release of the official OpenAI library for .NET](https://devblogs.microsoft.com/dotnet/announcing-the-stable-release-of-the-official-open-ai-library-for-dotnet/)
-- [Stack Overflow and OpenAI’s partnership](https://stackoverflow.co/company/press/archive/openaipartnership)
-- [OpenAI and Reddit’s partnership](https://openai.com/index/openai-and-redditpartnership/)
-- [Microsoft Designer](https://designer.microsoft.com/)
-- [GPT 3.5 Turbo model](https://platform.openai.com/docs/models/gpt-3-5-turbo)
-- [Create an Azure OpenAI resource](https://learn.microsoft.com/azure/ai-services/openai/how-to/create-resource)
-- [OpenAI platform signup](https://platform.openai.com/signup)
-- [OpenAI account API keys](https://platform.openai.com/api-keys)
-- [OpenAI account billing](https://platform.openai.com/account/billing/overview)
-- [OpenAI Playground](https://platform.openai.com/playground?model=gpt-3.5-turbo)
-- [OpenAI usage](https://platform.openai.com/usage)
-- [OpenAI official .NET package](https://github.com/openai/openai-dotnet)
-
-## Semantic Kernel
-- [Semantic Kernel NuGet package](https://www.nuget.org/packages/Microsoft.SemanticKernel)
-- [Working with Environment Variables](https://github.com/markjprice/cs12dotnet8/blob/main/docs/ch09-environment-variables.md)
-- [Introducing Semantic Kernel](https://devblogs.microsoft.com/semantic-kernel/hello-world/)
-- [Semantic Kernel Embeddings and Memories: Explore GitHub Repos with Chat UI](https://devblogs.microsoft.com/semantic-kernel/semantic-kernel-embeddings-and-memories-explore-github-repos-with-chat-ui/)
-- [Making AI powered .NET apps more consistent and intelligent with Redis](https://devblogs.microsoft.com/semantic-kernel/making-ai-powered-net-apps-more-consistent-and-intelligent-with-redis/)
-- [Building AI-powered Microsoft Copilot with SignalR and other open-source tools](https://devblogs.microsoft.com/dotnet/building-ai-powered-bing-chat-with-signalr-and-other-open-source-tools/)
-- [Build Intelligent Applications using ChatGPT & Azure Cosmos DB](https://devblogs.microsoft.com/cosmosdb/chatgpt-azure-cosmos-db/)
-- [Using Hugging Face models with the Semantic Kernel](https://devblogs.microsoft.com/semantic-kernel/how-to-use-hugging-face-models-with-semantic-kernel/)
-- [Semantic Kernel documentation](https://learn.microsoft.com/en-us/semantic-kernel/)
-- [Planning with Semantic Kernel using Automatic Function Calling](https://devblogs.microsoft.com/semantic-kernel/planning-with-semantic-kernel-using-automatic-function-calling/)
-- [The future of Planners in Semantic Kernel](https://devblogs.microsoft.com/semantic-kernel/the-future-of-planners-in-semantic-kernel/)
-- [Model as a Service (MaaS) Available for Semantic Kernel](https://devblogs.microsoft.com/semantic-kernel/model-as-a-service-maas-available-for-semantic-kernel/)
-
-## Local models
-- [.NET 9 tokenizers](https://github.com/dotnet/core/blob/main/release-notes/9.0/preview/preview4/libraries.md#tokenizer-library-enhancements)
-- [Hugging Face](https://huggingface.co/)
-- [Ollama](https://ollama.com/)
-- [Llama 2 Uncensored](https://erichartford.com/uncensored-models)
-- [Llama 3 license](https://llama.meta.com/llama3/license/)
-- [Ollama CLI reference](https://github.com/ollama/ollama#cli-reference)
-- [OllamaSharp](https://github.com/awaescher/OllamaSharp)
-- [OllamaSharp NuGet package](https://www.nuget.org/packages/OllamaSharp)
-- [LM Studio](https://lmstudio.ai/)
+- [Thread pool](https://learn.microsoft.com/en-us/dotnet/standard/threading/the-managed-thread-pool)
+- [Pros and cons of different ways to start tasks](https://devblogs.microsoft.com/pfxteam/task-factory-startnew-vs-new-task-start/)
+- [Events and thread-safety](https://learn.microsoft.com/en-us/archive/blogs/cburrows/field-like-events-considered-harmful)
+- [Stephen Cleary's thoughts on events and thread-safety](https://blog.stephencleary.com/2009/06/threadsafe-events.html)
+- [Threads and threading](https://learn.microsoft.com/en-us/dotnet/standard/threading/threads-and-threading)
+- [Async in depth](https://learn.microsoft.com/en-us/dotnet/standard/async-in-depth)
+- [await (C# reference)](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/await)
+- [Parallel Programming in .NET](https://learn.microsoft.com/en-us/dotnet/standard/parallel-programming/)
+- [Overview of synchronization primitives](https://learn.microsoft.com/en-us/dotnet/standard/threading/overview-of-synchronization-primitives)
+- [Async streams tutorial](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/generate-consume-asynchronous-stream)
+- [Performance Improvements in .NET 7 | .NET Conf 2022](https://www.youtube.com/watch?v=yNPEdaxkTZw)
 
 # Chapter 10 - Dependency Injection, Containers and Service Lifetime
 
