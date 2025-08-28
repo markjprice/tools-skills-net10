@@ -25,3 +25,16 @@ sequenceDiagram
 
     Note over C, PAY: All spans share the same TraceId. <br/>Each span has its own SpanId and a ParentId linking to its caller.
 ```
+
+
+```mermaid
+graph TD
+    L[LambdaExpression<br/>Func&lt;int&gt;] --> B[BlockExpression]
+    B --> V[Variable: three : int]
+    B --> A[Assign ExpressionType.Assign]
+    A --> P[ParameterExpression<br/>three]
+    A --> ADD[BinaryExpression<br/>Add]
+    ADD --> C1[ConstantExpression<br/>1]
+    ADD --> C2[ConstantExpression<br/>2]
+    B --> R[Result Expression → three]
+```
