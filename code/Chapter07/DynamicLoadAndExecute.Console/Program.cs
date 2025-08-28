@@ -1,4 +1,6 @@
-﻿Assembly? thisAssembly = Assembly.GetEntryAssembly();
+﻿using System.Runtime.Loader; // To use AssemblyLoadContext.
+
+Assembly? thisAssembly = Assembly.GetEntryAssembly();
 
 if (thisAssembly is null)
 {
@@ -10,7 +12,7 @@ OutputAssemblyInfo(thisAssembly);
 
 WriteLine($"Creating load context for:\n  {Path.GetFileName(thisAssembly.Location)}\n");
 
-DemoAssemblyLoadContext loadContext = new(thisAssembly.Location);
+AssemblyLoadContext loadContext = new(thisAssembly.Location, isCollectible: true);
 
 string assemblyPath = Path.Combine(
   Path.GetDirectoryName(thisAssembly.Location) ?? "",
