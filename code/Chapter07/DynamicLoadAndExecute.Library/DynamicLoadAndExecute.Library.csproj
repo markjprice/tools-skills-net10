@@ -5,6 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <OutputPath>..\DynamicLoadAndExecute.Console\bin\$(Configuration)\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
