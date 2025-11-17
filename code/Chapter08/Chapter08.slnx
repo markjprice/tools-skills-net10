@@ -1,0 +1,10 @@
+<Solution>
+  <Project Path="CryptographyLib/CryptographyLib.csproj" />
+  <Project Path="EncryptionApp/EncryptionApp.csproj" />
+  <Project Path="Exercise_DecryptData/Exercise_DecryptData.csproj" />
+  <Project Path="Exercise_EncryptData/Exercise_EncryptData.csproj" />
+  <Project Path="HashingApp/HashingApp.csproj" />
+  <Project Path="RandomizingApp/RandomizingApp.csproj" />
+  <Project Path="SecureApp/SecureApp.csproj" />
+  <Project Path="SigningApp/SigningApp.csproj" />
+</Solution>

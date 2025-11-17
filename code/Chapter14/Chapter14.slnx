@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="WeatherService/WeatherService.csproj" />
+  <Project Path="WebServiceTests/WebServiceTests.csproj" />
+  <Project Path="WebUITests/WebUITests.csproj" />
+</Solution>

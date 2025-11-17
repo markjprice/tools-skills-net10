@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="GenericHostApp/GenericHostApp.csproj" />
+  <Project Path="WebHostSite/WebHostSite.csproj" />
+</Solution>

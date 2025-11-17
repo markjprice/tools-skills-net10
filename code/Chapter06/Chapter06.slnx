@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="DocsApp/DocsApp.csproj" />
+  <Project Path="Northwind.WebApi/Northwind.WebApi.csproj" />
+  <Project Path="PacktLibrary/PacktLibrary.csproj" />
+</Solution>

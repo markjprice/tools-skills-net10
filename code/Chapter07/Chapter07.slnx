@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="DynamicLoadAndExecute.Console/DynamicLoadAndExecute.Console.csproj" />
+  <Project Path="DynamicLoadAndExecute.Library/DynamicLoadAndExecute.Library.csproj" />
+  <Project Path="GeneratingCodeApp/GeneratingCodeApp.csproj" />
+  <Project Path="GeneratingCodeLib/GeneratingCodeLib.csproj" />
+  <Project Path="WorkingWithExpressionTrees/WorkingWithExpressionTrees.csproj" />
+  <Project Path="WorkingWithReflection/WorkingWithReflection.csproj" />
+</Solution>

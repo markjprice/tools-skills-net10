@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Northwind.DataContext/Northwind.DataContext.csproj" />
+  <Project Path="Northwind.EntityModels/Northwind.EntityModels.csproj" />
+  <Project Path="Northwind.Tests/Northwind.Tests.csproj" />
+</Solution>

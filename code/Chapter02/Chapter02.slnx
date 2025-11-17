@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="CodeSnippetDemos/CodeSnippetDemos.csproj" />
+  <Project Path="ConsolePlusTemplate/ConsolePlusTemplate.csproj" />
+  <Project Path="DotNetEverywhere/DotNetEverywhere.csproj" />
+  <Project Path="LoweringCode/LoweringCode.csproj" />
+  <Project Path="RefactoringDemos/RefactoringDemos.csproj" />
+  <Project Path="SnippetDemos4Code/SnippetDemos4Code.csproj" />
+  <Project Path="TemplateTest/TemplateTest.csproj" />
+</Solution>

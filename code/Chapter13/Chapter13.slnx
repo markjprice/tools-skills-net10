@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="BenchmarkApp/BenchmarkApp.csproj" />
+  <Project Path="NBomberApp/NBomberApp.csproj" />
+  <Project Path="Northwind.WebApi/Northwind.WebApi.csproj" />
+  <Project Path="Northwind.WebApiAot/Northwind.WebApiAot.csproj" />
+</Solution>

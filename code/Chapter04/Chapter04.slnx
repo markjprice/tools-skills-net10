@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="DebugApp/DebugApp.csproj" />
+  <Project Path="DebugLibrary/DebugLibrary.csproj" />
+  <Project Path="DebugTests/DebugTests.csproj" />
+  <Project Path="MemoryApp/MemoryApp.csproj" />
+  <Project Path="PointersApp/PointersApp.csproj" />
+</Solution>

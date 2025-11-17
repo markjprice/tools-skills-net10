@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="LoggerApp/LoggerApp.csproj" />
+  <Project Path="Northwind.WebApi/Northwind.WebApi.csproj" />
+</Solution>

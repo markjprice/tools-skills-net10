@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="AspireExisting.AppHost/AspireExisting.AppHost.csproj" />
+  <Project Path="AspireExisting.ServiceDefaults/AspireExisting.ServiceDefaults.csproj" />
+  <Project Path="Northwind.WebApi/Northwind.WebApi.csproj" />
+</Solution>

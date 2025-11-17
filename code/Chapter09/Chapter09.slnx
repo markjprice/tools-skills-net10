@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="AsyncConsole/AsyncConsole.csproj" />
+  <Project Path="AsyncEnumerable/AsyncEnumerable.csproj" />
+  <Project Path="SynchronizingResourceAccess/SynchronizingResourceAccess.csproj" />
+  <Project Path="WorkingWithTasks/WorkingWithTasks.csproj" />
+  <Project Path="WpfResponsive/WpfResponsive.csproj" />
+</Solution>

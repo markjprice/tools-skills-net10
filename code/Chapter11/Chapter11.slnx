@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="BogusTests/BogusTests.csproj" />
+  <Project Path="BusinessLogic/BusinessLogic.csproj" />
+  <Project Path="BusinessLogicUnitTests/BusinessLogicUnitTests.csproj" />
+  <Project Path="FluentTests/FluentTests.csproj" />
+  <Project Path="Northwind.Commerce/Northwind.Commerce.csproj" />
+</Solution>

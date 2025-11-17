@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="AboutMyEnvironment/AboutMyEnvironment.csproj" />
+  <Project Path="EnvironmentLib/EnvironmentLib.csproj" />
+  <Project Path="Northwind.Mvc/Northwind.Mvc.csproj" />
+  <Project Path="NorthwindTests/NorthwindTests.csproj" />
+</Solution>
