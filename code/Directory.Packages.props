@@ -1,28 +1,24 @@
 <Project>
 
-  <!--Last updated package versions: June 17, 2025.-->
+  <!--Last updated package versions: November 17, 2025.-->
 
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-    <Net10>10.0.0-preview.5.25277.114</Net10>
-    <!-- EF Core Preview 5 packages have a bug that prevents dotnet-ef from scaffolding the models. 
-    Use Preview 4 packages for now.-->
-    <EFCore10>10.0.0-preview.4.25258.110</EFCore10>
-    <Aspire>9.3.1</Aspire>
-    <OpenTelemetry>1.12.0</OpenTelemetry>
-    <Testcontainers>4.6.0</Testcontainers>
+    <Net10>10.0.0</Net10>
+    <Aspire>13.0.0</Aspire>
+    <OpenTelemetry>1.14.0</OpenTelemetry>
+    <Testcontainers>4.8.1</Testcontainers>
   </PropertyGroup>
 
   <ItemGroup Label="Chapter 1 Introducing Tools and Skills for .NET">
-    <!--For EF Core 10 for SQL Server.-->
-    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="$(EFCore10)" />
-    <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="$(EFCore10)" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="$(Net10)" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="$(Net10)" />
 
     <!--For unit testing.-->
     <PackageVersion Include="coverlet.collector" Version="6.0.4" />
-    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.0.1" />
     <PackageVersion Include="xunit" Version="2.9.3" />
-    <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.1" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.5" />
   </ItemGroup>
 
   <ItemGroup Label="Chapter 5 Logging, Tracing, and Metrics for Observability">
@@ -31,7 +27,6 @@
     
     <!--For generating OpenAPI documentation.-->
     <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="$(Net10)" />
-    <PackageVersion Include="Swashbuckle.AspNetCore" Version="8.0.0" /> <!--remove asap-->
     
     <!--For performance counters.-->
 	  <PackageVersion Include="System.Diagnostics.PerformanceCounter" Version="$(Net10)" />
@@ -40,17 +35,17 @@
     <PackageVersion Include="OpenTelemetry.Exporter.Console" Version="$(OpenTelemetry)" />
     <PackageVersion Include="OpenTelemetry.Extensions.Hosting" Version="$(OpenTelemetry)" />
     <PackageVersion Include="OpenTelemetry.Instrumentation.AspNetCore" Version="$(OpenTelemetry)" />
-    <PackageVersion Include="OpenTelemetry.Instrumentation.EntityFrameworkCore" Version="$(OpenTelemetry)" />
-    <PackageVersion Include="OpenTelemetry.Instrumentation.SqlClient" Version="$(OpenTelemetry)" />
+    <PackageVersion Include="OpenTelemetry.Instrumentation.EntityFrameworkCore" Version="1.14.0-beta.2" />
+    <PackageVersion Include="OpenTelemetry.Instrumentation.SqlClient" Version="1.14.0-beta.1" />
   </ItemGroup>
 
   <ItemGroup Label="Chapter 7 Observing and Modifying Code Execution Dynamically">
-    <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="4.14.0" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="3.11.0" />
     <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="4.14.0" />
   </ItemGroup>
 
   <ItemGroup Label="Chapter 9 Multitasking and Concurrency">
-    <PackageVersion Include="Microsoft.Data.SqlClient" Version="6.0.2" />
+    <PackageVersion Include="Microsoft.Data.SqlClient" Version="6.1.3" />
   </ItemGroup>
 
   <ItemGroup Label="Chapter 10 Dependency Injection, Containers, and Service Lifetime">
@@ -59,40 +54,40 @@
 
   <ItemGroup Label="Chapter 11 Unit Testing and Mocking">
     <PackageVersion Include="NSubstitute" Version="5.3.0" />
-    <PackageVersion Include="Bogus" Version="35.6.3" />
+    <PackageVersion Include="Bogus" Version="35.6.5" />
 
     <!--FluentAssertions restricted its license with 8.0 and later.-->
-    <!--Minimum 7.0.0 (inclusive) up to maximum 8.0.0 (exclusive).-->
-    <PackageVersion Include="FluentAssertions" Version="[7.0.0,8.0.0)" />
+    <!--Minimum 7.2.0 (inclusive) up to maximum 8.0.0 (exclusive).-->
+    <PackageVersion Include="FluentAssertions" Version="[7.2.0,8.0.0)" />
   </ItemGroup>
 
   <ItemGroup Label="Chapter 13 Benchmarking Performance, Load, and Stress Testing">
-    <PackageVersion Include="BenchmarkDotNet" Version="0.15.2" />
-    <PackageVersion Include="NBomber" Version="6.0.2" />
-    <PackageVersion Include="NBomber.Http" Version="6.0.1" />
+    <PackageVersion Include="BenchmarkDotNet" Version="0.15.6" />
+    <PackageVersion Include="NBomber" Version="6.1.2" />
+    <PackageVersion Include="NBomber.Http" Version="6.1.0" />
   </ItemGroup>
 
   <ItemGroup Label="Chapter 14 Functional and End-to-End Testing of Websites and Services">
-    <PackageVersion Include="Microsoft.Playwright" Version="1.52.0" />
+    <PackageVersion Include="Microsoft.Playwright" Version="1.56.0" />
     <PackageVersion Include="Microsoft.AspNetCore.Mvc.Testing" Version="$(Net10)" />
   </ItemGroup>
 
   <ItemGroup Label="Chapter 15 Containerization Using Docker">
-    <PackageVersion Include="Spectre.Console" Version="0.50.0" />
+    <PackageVersion Include="Spectre.Console" Version="0.54.0" />
     <PackageVersion Include="Testcontainers" Version="$(Testcontainers)" />
     <PackageVersion Include="Testcontainers.MsSql" Version="$(Testcontainers)" />
     <PackageVersion Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="$(Net10)" />
     <PackageVersion Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="$(Net10)" />
     <PackageVersion Include="Microsoft.AspNetCore.Identity.UI" Version="$(Net10)" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore.Tools" Version="$(EFCore10)" />
-    <PackageVersion Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="$(Net10)" />
+    <PackageVersion Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
   </ItemGroup>
 
-  <ItemGroup Label="Chapter 16 Cloud-Native Development Using .NET Aspire">
+  <ItemGroup Label="Chapter 16 Cloud-Native Development Using Aspire">
     <PackageVersion Include="Aspire.Hosting.AppHost" Version="$(Aspire)" />
     <PackageVersion Include="Aspire.Hosting.Redis" Version="$(Aspire)" />
-    <PackageVersion Include="Microsoft.Extensions.Http.Resilience" Version="9.6.0" />
-    <PackageVersion Include="Microsoft.Extensions.ServiceDiscovery" Version="$(Aspire)" />
+    <PackageVersion Include="Microsoft.Extensions.Http.Resilience" Version="$(Net10)" />
+    <PackageVersion Include="Microsoft.Extensions.ServiceDiscovery" Version="$(Net10)" />
     <PackageVersion Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="$(OpenTelemetry)" />
     <PackageVersion Include="OpenTelemetry.Instrumentation.Http" Version="$(OpenTelemetry)" />
     <PackageVersion Include="OpenTelemetry.Instrumentation.Runtime" Version="$(OpenTelemetry)" />
