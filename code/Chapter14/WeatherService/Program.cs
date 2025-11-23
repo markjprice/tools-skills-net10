@@ -33,8 +33,6 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast");
 
-string? name = typeof(Program).Namespace;
-
 app.Run();
 
 public record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)

@@ -21,7 +21,7 @@ public class eShopWebUITests
   }
 
   [Fact]
-  public async void HomePage_Title()
+  public async Task HomePage_Title()
   {
     // Arrange: Launch Chrome browser and navigate to home page.
     // using to make sure Dispose is called at the end of the test.
@@ -51,7 +51,7 @@ public class eShopWebUITests
   }
 
   [Fact]
-  public async void HomePage_CartEmptyAndVisible()
+  public async Task HomePage_CartEmptyAndVisible()
   {
     // Arrange: Launch Chrome browser and navigate to home page.
     using IPlaywright? playwright = await Playwright.CreateAsync();
@@ -71,7 +71,7 @@ public class eShopWebUITests
   }
 
   [Fact]
-  public async void HomePage_FilterCategories()
+  public async Task HomePage_FilterCategories()
   {
     // Arrange: Launch Chrome browser and navigate to home page.
     using IPlaywright? playwright = await Playwright.CreateAsync();
