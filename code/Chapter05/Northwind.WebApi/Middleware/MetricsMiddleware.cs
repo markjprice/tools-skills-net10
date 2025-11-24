@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics; // To use Stopwatch.
+using Northwind.WebApi.Services; // To use the MetricsService class.
 
-namespace Northwind.WebApi;
+namespace Northwind.WebApi.Middleware;
 
 public class MetricsMiddleware
 {

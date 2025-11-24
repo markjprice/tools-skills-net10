@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="../Chapter01/Northwind.DataContext/Northwind.DataContext.csproj" />
   <Project Path="LoggerApp/LoggerApp.csproj" />
-  <Project Path="Northwind.WebApi/Northwind.WebApi.csproj" />
+  <Project Path="Northwind.WebApi/Northwind.WebApi.csproj" Id="c5b1d7e7-5026-4a50-8953-0ef9115a2cd9" />
 </Solution>

@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.Metrics; // To use Meter, Counter, and Histogram.
 
-namespace Northwind.WebApi;
+namespace Northwind.WebApi.Services;
 
 public class MetricsService
 {

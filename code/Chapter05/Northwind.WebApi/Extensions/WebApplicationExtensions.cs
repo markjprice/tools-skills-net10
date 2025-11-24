@@ -1,14 +1,14 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults; // To use Results.
 using Microsoft.AspNetCore.Mvc; // To use [FromServices] and so on.
 using Northwind.EntityModels; // To use NorthwindContext, Product.
-using Northwind.WebApi; // To use MetricsService.
+using Northwind.WebApi.Services; // To use the MetricsService class.
 
-namespace Packt.Extensions;
+namespace Northwind.WebApi.Extensions;
 
 public static class WebApplicationExtensions
 {
-  public static WebApplication MapGets(this WebApplication app,
-    int pageSize = 10)
+  public static WebApplication MapGets(
+    this WebApplication app, int pageSize = 10)
   {
     app.MapGet("api/metrics", (
       [FromServices] MetricsService metricsService) => new
@@ -29,13 +29,6 @@ public static class WebApplicationExtensions
         .Take(pageSize)
       )
       .WithName("GetProducts")
-      .WithOpenApi(operation =>
-      {
-        operation.Description =
-          "Get products with UnitsInStock > 0 and Discontinued = false.";
-        operation.Summary = "Get in-stock products that are not discontinued.";
-        return operation;
-      })
       .Produces<Product[]>(StatusCodes.Status200OK);
 
     app.MapGet("api/products/outofstock",
@@ -43,7 +36,6 @@ public static class WebApplicationExtensions
         .Where(p => p.UnitsInStock == 0 && !p.Discontinued)
       )
       .WithName("GetProductsOutOfStock")
-      .WithOpenApi()
       .Produces<Product[]>(StatusCodes.Status200OK);
 
     app.MapGet("api/products/discontinued",
@@ -51,7 +43,6 @@ public static class WebApplicationExtensions
         db.Products?.Where(product => product.Discontinued)
       )
       .WithName("GetProductsDiscontinued")
-      .WithOpenApi()
       .Produces<Product[]>(StatusCodes.Status200OK);
 
     app.MapGet("api/products/{id:int}",
@@ -70,7 +61,6 @@ public static class WebApplicationExtensions
         }
       })
       .WithName("GetProductById")
-      .WithOpenApi()
       .Produces<Product>(StatusCodes.Status200OK)
       .Produces(StatusCodes.Status404NotFound);
 
@@ -79,7 +69,6 @@ public static class WebApplicationExtensions
       [FromRoute] string name) =>
         db.Products?.Where(p => p.ProductName.Contains(name)))
       .WithName("GetProductsByName")
-      .WithOpenApi()
       .Produces<Product[]>(StatusCodes.Status200OK);
 
     return app;
