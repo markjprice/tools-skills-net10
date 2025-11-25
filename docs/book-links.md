@@ -49,7 +49,7 @@
   - [Docker](#docker)
   - [Common Docker container images](#common-docker-container-images)
   - [.NET container images](#net-container-images)
-- [Chapter 16 - Cloud-Native Development Using .NET Aspire](#chapter-16---cloud-native-development-using-net-aspire)
+- [Chapter 16 - Cloud-Native Development Using Aspire](#chapter-16---cloud-native-development-using-aspire)
 - [Chapter 17 - Design Patterns and Principles](#chapter-17---design-patterns-and-principles)
 - [Chapter 18 - Software and Solution Architecture Foundations](#chapter-18---software-and-solution-architecture-foundations)
 - [Chapter 19 - Your Career, Teamwork, and Interviews](#chapter-19---your-career-teamwork-and-interviews)
@@ -477,7 +477,7 @@
 - [e-book about containerization with .NET](https://learn.microsoft.com/en-us/dotnet/architecture/microservices)
 - [Test containers](https://dotnet.testcontainers.org/)
 
-# Chapter 16 - Cloud-Native Development Using .NET Aspire
+# Chapter 16 - Cloud-Native Development Using Aspire
 
 - [Upgrade to .NET Aspire 9.0](https://learn.microsoft.com/en-us/dotnet/aspire/get-started/upgrade-to-aspire-9)
 - [Aspire 9 upcoming features - Twitter 🧵](https://x.com/davidfowl/status/1840969475367326070)
