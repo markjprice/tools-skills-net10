@@ -5,7 +5,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <UserSecretsId>b3439fdc-28be-4c60-92db-dde51b863fbd</UserSecretsId>
+    <UserSecretsId>ee8e79df-070f-46a4-817f-6dd561062af1</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Aspire.Hosting.Redis" Version="13.0.0" />
+    <PackageReference Include="Aspire.Hosting.Redis" />
   </ItemGroup>
 
 </Project>
