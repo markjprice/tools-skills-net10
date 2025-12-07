@@ -5,32 +5,28 @@ namespace Northwind.Tests;
 public class NorthwindEntityModelsTests
 {
   [Fact]
-  public void CanConnectIsTrue()
+  public void DatabaseConnectTest()
   {
-    using (NorthwindContext db = new()) // arrange
-    {
-      bool canConnect = db.Database.CanConnect(); // act
-      Assert.True(canConnect); // assert
-    }
+    using NorthwindContext db = new();
+    Assert.True(db.Database.CanConnect());
   }
 
   [Fact]
-  public void ProviderIsSqlServer()
+  public void CategoryCountTest()
   {
-    using (NorthwindContext db = new())
-    {
-      string? provider = db.Database.ProviderName;
-      Assert.Equal("Microsoft.EntityFrameworkCore.SqlServer", provider);
-    }
+    using NorthwindContext db = new();
+    int expected = 8;
+    int actual = db.Categories.Count();
+    Assert.Equal(expected, actual);
   }
 
   [Fact]
-  public void ProductId1IsChai()
+  public void ProductId1IsChaiTest()
   {
-    using (NorthwindContext db = new())
-    {
-      Product? product1 = db.Products?.Single(p => p.ProductId == 1);
-      Assert.Equal("Chai", product1?.ProductName);
-    }
+    using NorthwindContext db = new();
+    string expected = "Chai";
+    Product? product = db?.Products?.Single(p => p.ProductId == 1);
+    string actual = product?.ProductName ?? string.Empty;
+    Assert.Equal(expected, actual);
   }
 }
