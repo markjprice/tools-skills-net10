@@ -2,13 +2,11 @@
 
 # Tools and Skills for .NET 10, Second Edition
 
-Repository for the Packt Publishing book titled "Tools and Skills for .NET 10" by Mark J. Price
+Repository for the Packt Publishing book titled "Tools and Skills for .NET 10" by Mark J. Price. Published on January 7, 2026.
 
 > *Get the career you want with good practices and patterns to design, debug, and test your solutions*
 
 > **[FAQs](https://github.com/markjprice/markjprice/blob/main/FAQs.md)**
-
-The book is planned to publish in February 2026.
 
 # Free PDF/ePub of the book and how to contact the publisher Packt
 
@@ -52,13 +50,13 @@ My author page on Goodreads: https://www.goodreads.com/author/show/14224500.Mark
 - Chapter 15 Containerization Using Docker: [code/Chapter15](code/Chapter15)
 - Chapter 16 Cloud-Native Development Using .NET Aspire: [code/Chapter16](code/Chapter16)
 
-**Design**
+**Design and Career**
 - Chapter 17 Design Patterns and Principles
 - Chapter 18 Software and Solution Architecture Foundations
 - Chapter 19 Your Career, Teamwork, and Interviews
 
 **Appendix**
-- Appendix A, Answers to the Test Your Knowledge Questions
+- [*Appendix A, Answers to the Test Your Knowledge Questions*](docs/B31468_Appendix%20A.pdf)
 - [*Appendix B, Setting Up Your Development Environment*](docs/B31468_Appendix%20B.pdf)
 - [*Appendix C, Looking for help*](https://github.com/markjprice/markjprice/blob/main/articles/getting-help.md) and [PDF](docs/B31468_Appendix%20C.pdf)
 - Appendices are included with your purchase. Visit https://packtpub.com/unlock, then use the search bar to find this book by name. Double-check the edition shown to make sure you get the right one.
