@@ -1,14 +1,14 @@
 <Project>
 
-  <!--Last updated package versions: December 10, 2025.-->
+  <!--Last updated package versions: January 13, 2026.-->
 
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-    <Net10>10.0.1</Net10>
-    <Aspire>13.0.2</Aspire>
+    <Net10>10.0.2</Net10>
+    <Aspire>13.1.0</Aspire>
     <OpenTelemetry>1.14.0</OpenTelemetry>
-    <Testcontainers>4.9.0</Testcontainers>
-    <MSExt>10.1.0</MSExt>
+    <Testcontainers>4.10.0</Testcontainers>
+    <MSExt>10.2.0</MSExt>
   </PropertyGroup>
 
   <ItemGroup Label="Chapter 1 Introducing Tools and Skills for .NET">
