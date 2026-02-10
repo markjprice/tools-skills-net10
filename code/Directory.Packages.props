@@ -1,17 +1,21 @@
 <Project>
 
-  <!--Last updated package versions: January 13, 2026.-->
+  <!--Last updated package versions: February 10, 2026.-->
 
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-    <Net10>10.0.2</Net10>
+    <Net10>10.0.3</Net10>
+    <Net11>11.0.0-preview.1.26104.118</Net11>
     <Aspire>13.1.0</Aspire>
     <OpenTelemetry>1.14.0</OpenTelemetry>
     <Testcontainers>4.10.0</Testcontainers>
-    <MSExt>10.2.0</MSExt>
+    <MSExt>10.3.0</MSExt>
   </PropertyGroup>
 
   <ItemGroup Label="Chapter 1 Introducing Tools and Skills for .NET">
+    <!-- To use the .NET 11 preview packages, change the versions below from $(Net10) to $(Net11). -->
+    <!-- Your projects should also target net11 and you must install .NET 11 Preview SDK. -->
+    
     <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="$(Net10)" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="$(Net10)" />
 
