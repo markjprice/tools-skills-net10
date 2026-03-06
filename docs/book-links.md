@@ -1,7 +1,7 @@
 - [Chapter 1 - Introducing Tools and Skills for .NET](#chapter-1---introducing-tools-and-skills-for-net)
   - [.NET code editors and platforms](#net-code-editors-and-platforms)
   - [Visual Studio](#visual-studio)
-  - [Code](#code)
+  - [VS Code](#vs-code)
   - [Rider](#rider)
   - [.NET](#net)
   - [SQL Server entity model projects](#sql-server-entity-model-projects)
@@ -9,7 +9,7 @@
 - [Chapter 2 - Making the Most of the Tools in your Code Editor](#chapter-2---making-the-most-of-the-tools-in-your-code-editor)
   - [Editor config](#editor-config)
   - [Visual Studio](#visual-studio-1)
-  - [Code](#code-1)
+  - [Code](#code)
   - [Decompiling](#decompiling)
   - [Project and item templates](#project-and-item-templates)
   - [Stack Overflow](#stack-overflow)
@@ -76,15 +76,15 @@
 - [Visual Studio for Mac Retirement Announcement](https://devblogs.microsoft.com/visualstudio/visual-studiofor-mac-retirement-announcement/)
 - [Making Visual Studio a bit more visual](https://devblogs.microsoft.com/visualstudio/making-visual-studio-a-bit-more-visual/)
 
-## Code
-- [Download Visual Studio Code](https://code.visualstudio.com/)
-- [Visual Studio Code key bindings and shortcuts](https://code.visualstudio.com/docs/getstarted/keybindings)
+## VS Code
+- [Download VS Code](https://code.visualstudio.com/)
+- [VS Code key bindings and shortcuts](https://code.visualstudio.com/docs/getstarted/keybindings)
   - [Windows shortcuts PDF](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
   - [macOS shortcuts PDF](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
   - [Linux shortcuts PDF](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
 - [C# Dev Kit – Now Generally Available](https://devblogs.microsoft.com/dotnet/csharp-dev-kit-now-generally-available/)
 - [C# Dev Kit – License](https://aka.ms/vs/csdevkit/license)
-- [PowerShell scripts to install Code extensions](https://github.com/markjprice/tools-skills-net8/tree/main/scripts/extension-scripts)
+- [PowerShell scripts to install VS Code extensions](https://github.com/markjprice/tools-skills-net8/tree/main/scripts/extension-scripts)
 
 ## Rider
 - [WebStorm and Rider Are Now Free for Non-Commercial Use](https://blog.jetbrains.com/blog/2024/10/24/webstorm-and-rider-are-now-free-for-non-commercial-use/)
@@ -96,14 +96,12 @@
 ## .NET
 - [Download .NET SDK](https://dotnet.microsoft.com/en-us/download)
 - [The convenience of .NET](https://devblogs.microsoft.com/dotnet/the-convenience-of-dotnet/)
-- [What's new in .NET 8](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-8)
-- [Official list of .NET 8 supported operating systems](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md)
+- [Official list of .NET 10 supported operating systems](https://github.com/dotnet/core/blob/main/release-notes/10.0/supported-os.md)
 - [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core)
 - [.NET versions](https://learn.microsoft.com/en-us/dotnet/core/versions/)
 - [.NET Runtime](https://github.com/dotnet/runtime/blob/main/README.md)
 - [.NET Release Schedule](https://github.com/dotnet/core/blob/main/roadmap.md)
 - [Global JSON file](https://learn.microsoft.com/en-us/dotnet/core/tools/global-json)
-- [.NET 9 preview announcements](https://github.com/dotnet/core/discussions/9234)
 
 ## SQL Server entity model projects
 - [SQL Server for Linux](https://learn.microsoft.com/en-us/sql/linux/sql-server-linux-setup)
@@ -252,18 +250,12 @@
 
 ## Documenting web services
 - [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Swashbuckle for ASP.NET Core](https://github.com/domaindrivendev/Swashbuckle.AspNetCore)
 - [NSwag](https://github.com/RicoSuter/NSwag)
-- [FastEndpoints](https://github.com/FastEndpoints/FastEndpoints)
 - [Swashbuckle will be removed from the project templates in .NET 9](https://github.com/dotnet/aspnetcore/issues/54599)
 - [Swagger API design](https://swagger.io/solutions/api-design/)
 - [API Security](https://learn.openapis.org/specification/security.html)
 - [OpenAPI code generator](https://github.com/OpenAPITools/openapi-generator)
-- [Swagger code generator](https://swagger.io/tools/swagger-codegen/)
 - [Importance of documenting services](https://idratherbewriting.com/learnapidoc/)
-- [Swagger](https://swagger.io/)
-- [Swagger Tools](https://swagger.io/tools/)
-- [How Swagger can support multiple versions of an API](https://stackoverflow.com/questions/30789045/leverage-multipleapiversions-in-swagger-with-attribute-versioning/30789944)
 
 ## Mermaid
 - [Mermaid documentation](https://mermaid.js.org/intro/getting-started.html)
@@ -287,7 +279,6 @@
 - [Extending Metadata Using Attributes](https://learn.microsoft.com/en-us/dotnet/standard/attributes/)
 - [PersistedAssemblyBuilder class in .NET 9](https://learn.microsoft.com/en-us/dotnet/core/whatsnew/dotnet-9/libraries#reflection)
 - [Inspect assembly contents using MetadataLoadContext](https://docs.microsoft.com/en-us/dotnet/standard/assembly/inspect-contents-using-metadataloadcontext)
-- 
 
 ## Expression Trees
 - [Expression Trees (C#)](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/expression-trees/)
