@@ -1,15 +1,23 @@
 <Project>
 
-  <!--Last updated package versions: April 14, 2026.-->
+  <!--Last updated package versions: May 12, 2026.-->
 
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Define custom properties for common version numbers.">
     <Net10>10.0.6</Net10>
-    <Net11>11.0.0-preview.3.26207.106</Net11>
-    <OpenTelemetry>1.15.2</OpenTelemetry>
+    <Net11>11.0.0-preview.4.26230.115</Net11>
+    <!-- To use .NET 11 preview packages: -->
+    <!-- 1) Install the latest .NET 11 SDK preview. -->
+    <!-- 2) Change project target framework from net10.0 to net11.0. -->
+    <!-- 3) Change the version values below from $(Net10) to $(Net11). -->
+
+    <OpenTelemetry>1.15.3</OpenTelemetry>
     <Testcontainers>4.11.0</Testcontainers>
-    <Aspire>13.2.2</Aspire>
-    <MSExt>10.4.0</MSExt>
+    <Aspire>13.3.0</Aspire>
+    <MSExt>10.5.0</MSExt>
   </PropertyGroup>
 
   <ItemGroup Label="Chapter 1 Introducing Tools and Skills for .NET">
@@ -20,8 +28,8 @@
     <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="$(Net10)" />
 
     <!--For unit testing.-->
-    <PackageVersion Include="coverlet.collector" Version="8.0.1" />
-    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.4.0" />
+    <PackageVersion Include="coverlet.collector" Version="10.0.0" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.5.1" />
     <PackageVersion Include="xunit" Version="2.9.3" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.5" />
   </ItemGroup>
@@ -39,9 +47,9 @@
     <!--For OpenTelemetry.-->
     <PackageVersion Include="OpenTelemetry.Exporter.Console" Version="$(OpenTelemetry)" />
     <PackageVersion Include="OpenTelemetry.Extensions.Hosting" Version="$(OpenTelemetry)" />
-    <PackageVersion Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.15.1" />
-    <PackageVersion Include="OpenTelemetry.Instrumentation.EntityFrameworkCore" Version="1.15.0-beta.1" />
-    <PackageVersion Include="OpenTelemetry.Instrumentation.SqlClient" Version="1.15.1" />
+    <PackageVersion Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.15.2" />
+    <PackageVersion Include="OpenTelemetry.Instrumentation.EntityFrameworkCore" Version="1.15.1-beta.1" />
+    <PackageVersion Include="OpenTelemetry.Instrumentation.SqlClient" Version="1.15.2" />
   </ItemGroup>
 
   <ItemGroup Label="Chapter 7 Observing and Modifying Code Execution Dynamically">
@@ -50,7 +58,7 @@
   </ItemGroup>
 
   <ItemGroup Label="Chapter 9 Multitasking and Concurrency">
-    <PackageVersion Include="Microsoft.Data.SqlClient" Version="7.0.0" />
+    <PackageVersion Include="Microsoft.Data.SqlClient" Version="7.0.1" />
   </ItemGroup>
 
   <ItemGroup Label="Chapter 10 Dependency Injection, Containers, and Service Lifetime">
@@ -68,7 +76,7 @@
 
   <ItemGroup Label="Chapter 13 Benchmarking Performance, Load, and Stress Testing">
     <PackageVersion Include="BenchmarkDotNet" Version="0.15.8" />
-    <PackageVersion Include="NBomber" Version="6.3.0" />
+    <PackageVersion Include="NBomber" Version="6.4.0" />
     <PackageVersion Include="NBomber.Http" Version="6.2.0" />
   </ItemGroup>
 
@@ -78,7 +86,7 @@
   </ItemGroup>
 
   <ItemGroup Label="Chapter 15 Containerization Using Docker">
-    <PackageVersion Include="Spectre.Console" Version="0.55.0" />
+    <PackageVersion Include="Spectre.Console" Version="0.55.2" />
     <PackageVersion Include="Testcontainers" Version="$(Testcontainers)" />
     <PackageVersion Include="Testcontainers.MsSql" Version="$(Testcontainers)" />
     <PackageVersion Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="$(Net10)" />
