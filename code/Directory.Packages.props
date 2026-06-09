@@ -1,23 +1,23 @@
 <Project>
 
-  <!--Last updated package versions: May 12, 2026.-->
+  <!--Last updated package versions: June 9, 2026.-->
 
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
 
   <PropertyGroup Label="Define custom properties for common version numbers.">
-    <Net10>10.0.6</Net10>
-    <Net11>11.0.0-preview.4.26230.115</Net11>
+    <Net10>10.0.9</Net10>
+    <Net11>11.0.0-preview.5.26302.115</Net11>
     <!-- To use .NET 11 preview packages: -->
     <!-- 1) Install the latest .NET 11 SDK preview. -->
     <!-- 2) Change project target framework from net10.0 to net11.0. -->
     <!-- 3) Change the version values below from $(Net10) to $(Net11). -->
 
     <OpenTelemetry>1.15.3</OpenTelemetry>
-    <Testcontainers>4.11.0</Testcontainers>
-    <Aspire>13.3.0</Aspire>
-    <MSExt>10.5.0</MSExt>
+    <Testcontainers>4.12.0</Testcontainers>
+    <Aspire>13.4.3</Aspire>
+    <MSExt>10.7.0</MSExt>
   </PropertyGroup>
 
   <ItemGroup Label="Chapter 1 Introducing Tools and Skills for .NET">
@@ -28,8 +28,8 @@
     <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="$(Net10)" />
 
     <!--For unit testing.-->
-    <PackageVersion Include="coverlet.collector" Version="10.0.0" />
-    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.5.1" />
+    <PackageVersion Include="coverlet.collector" Version="10.0.1" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.6.0" />
     <PackageVersion Include="xunit" Version="2.9.3" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.5" />
   </ItemGroup>
@@ -81,12 +81,12 @@
   </ItemGroup>
 
   <ItemGroup Label="Chapter 14 Functional and End-to-End Testing of Websites and Services">
-    <PackageVersion Include="Microsoft.Playwright" Version="1.59.0" />
+    <PackageVersion Include="Microsoft.Playwright" Version="1.60.0" />
     <PackageVersion Include="Microsoft.AspNetCore.Mvc.Testing" Version="$(Net10)" />
   </ItemGroup>
 
   <ItemGroup Label="Chapter 15 Containerization Using Docker">
-    <PackageVersion Include="Spectre.Console" Version="0.55.2" />
+    <PackageVersion Include="Spectre.Console" Version="0.56.0" />
     <PackageVersion Include="Testcontainers" Version="$(Testcontainers)" />
     <PackageVersion Include="Testcontainers.MsSql" Version="$(Testcontainers)" />
     <PackageVersion Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="$(Net10)" />
