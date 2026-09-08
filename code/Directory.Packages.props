@@ -1,23 +1,23 @@
 <Project>
 
-  <!--Last updated package versions: August 11, 2026.-->
+  <!--Last updated package versions: September 8, 2026.-->
 
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
 
   <PropertyGroup Label="Define custom properties for common version numbers.">
-    <Net10>10.0.11</Net10>
-    <Net11>11.0.0-preview.7.26381.103</Net11>
+    <Net10>10.0.12</Net10>
+    <Net11>11.0.0-rc.1.26425.128</Net11>
     <!-- To use .NET 11 preview packages: -->
     <!-- 1) Install the latest .NET 11 SDK preview. -->
     <!-- 2) Change project target framework from net10.0 to net11.0. -->
     <!-- 3) Change the version values below from $(Net10) to $(Net11). -->
 
     <OpenTelemetry>1.17.0</OpenTelemetry>
-    <Testcontainers>4.13.0</Testcontainers>
-    <Aspire>13.4.6</Aspire>
-    <MSExt>10.8.0</MSExt>
+    <Testcontainers>4.15.0</Testcontainers>
+    <Aspire>13.5.3</Aspire>
+    <MSExt>10.9.0</MSExt>
   </PropertyGroup>
 
   <ItemGroup Label="Chapter 1 Introducing Tools and Skills for .NET">
@@ -29,7 +29,7 @@
 
     <!--For unit testing.-->
     <PackageVersion Include="coverlet.collector" Version="10.0.1" />
-    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.8.1" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.9.0" />
     <PackageVersion Include="xunit" Version="2.9.3" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.5" />
   </ItemGroup>
@@ -81,7 +81,7 @@
   </ItemGroup>
 
   <ItemGroup Label="Chapter 14 Functional and End-to-End Testing of Websites and Services">
-    <PackageVersion Include="Microsoft.Playwright" Version="1.60.0" />
+    <PackageVersion Include="Microsoft.Playwright" Version="1.62.0" />
     <PackageVersion Include="Microsoft.AspNetCore.Mvc.Testing" Version="$(Net10)" />
   </ItemGroup>
 
