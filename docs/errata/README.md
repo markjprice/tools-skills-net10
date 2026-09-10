@@ -4,8 +4,16 @@ If you find any mistakes in the second edition, *Tools and Skills for .NET 10*, 
 
 > **Warning!** You must be signed in to your GitHub account to enable the **New issue** button, otherwise it will mislead you by saying *Issue creation is restricted in this repository*. All signed in GitHub users are allowed to create issues in my public repositories.
 
-[**Errata** (0 items)](errata.md): Typos, tool user interface and behavior changes, or mistakes in code that would cause a compilation error that prevents a successful build.
+[**Errata** (1 item)](errata.md): Typos, tool user interface and behavior changes, or mistakes in code that would cause a compilation error that prevents a successful build.
 
 [**Improvements** (0 items)](improvements.md): Changes to text or code that would improve the content. These are optional.
 
 [**Common Mistakes**](https://github.com/markjprice/markjprice/blob/main/articles/common-mistakes.md): These are some of the most common mistakes that a reader might encounter when trying to get code in book tasks to work, or when trying to write your own code. (Links to the `markjprice` shared articles repository.)
+
+All errata and improvements will be included in the next edition.
+
+# Top Contributors
+
+Who|Errata|Improvements
+---|---|---
+Phil aka [zkazz](https://github.com/zkazz)|1|0
