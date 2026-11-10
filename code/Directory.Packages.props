@@ -1,23 +1,24 @@
 <Project>
 
-  <!--Last updated package versions: September 8, 2026.-->
+  <!--Last updated package versions: November 10, 2026.-->
 
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
 
   <PropertyGroup Label="Define custom properties for common version numbers.">
-    <Net10>10.0.12</Net10>
-    <Net11>11.0.0-rc.1.26425.128</Net11>
+    <Net10>10.0.15</Net10>
+    <Net11>11.0.0</Net11>
+		
     <!-- To use .NET 11 preview packages: -->
     <!-- 1) Install the latest .NET 11 SDK preview. -->
     <!-- 2) Change project target framework from net10.0 to net11.0. -->
     <!-- 3) Change the version values below from $(Net10) to $(Net11). -->
 
-    <OpenTelemetry>1.17.0</OpenTelemetry>
-    <Testcontainers>4.15.0</Testcontainers>
-    <Aspire>13.5.3</Aspire>
-    <MSExt>10.9.0</MSExt>
+    <OpenTelemetry>1.20.1</OpenTelemetry>
+    <Testcontainers>4.16.0</Testcontainers>
+    <Aspire>13.6.5</Aspire>
+    <MSExt>10.11.0</MSExt>
   </PropertyGroup>
 
   <ItemGroup Label="Chapter 1 Introducing Tools and Skills for .NET">
@@ -28,9 +29,11 @@
     <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="$(Net10)" />
 
     <!--For unit testing.-->
-    <PackageVersion Include="coverlet.collector" Version="10.0.1" />
-    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.9.0" />
-    <PackageVersion Include="xunit" Version="2.9.3" />
+    <PackageVersion Include="coverlet.collector" Version="10.1.0" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.11.0" />
+
+		<!--xunit package will only be updated for security issues. All future feature work has moved onto v3.-->
+		<PackageVersion Include="xunit" Version="2.9.3" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.5" />
   </ItemGroup>
 
@@ -48,7 +51,7 @@
     <PackageVersion Include="OpenTelemetry.Exporter.Console" Version="$(OpenTelemetry)" />
     <PackageVersion Include="OpenTelemetry.Extensions.Hosting" Version="$(OpenTelemetry)" />
     <PackageVersion Include="OpenTelemetry.Instrumentation.AspNetCore" Version="$(OpenTelemetry)" />
-    <PackageVersion Include="OpenTelemetry.Instrumentation.EntityFrameworkCore" Version="1.17.0-beta.1" />
+    <PackageVersion Include="OpenTelemetry.Instrumentation.EntityFrameworkCore" Version="1.20.2-beta.1" />
     <PackageVersion Include="OpenTelemetry.Instrumentation.SqlClient" Version="$(OpenTelemetry)" />
   </ItemGroup>
 
@@ -58,7 +61,7 @@
   </ItemGroup>
 
   <ItemGroup Label="Chapter 9 Multitasking and Concurrency">
-    <PackageVersion Include="Microsoft.Data.SqlClient" Version="7.0.2" />
+    <PackageVersion Include="Microsoft.Data.SqlClient" Version="7.1.1" />
   </ItemGroup>
 
   <ItemGroup Label="Chapter 10 Dependency Injection, Containers, and Service Lifetime">
@@ -81,7 +84,7 @@
   </ItemGroup>
 
   <ItemGroup Label="Chapter 14 Functional and End-to-End Testing of Websites and Services">
-    <PackageVersion Include="Microsoft.Playwright" Version="1.62.0" />
+    <PackageVersion Include="Microsoft.Playwright" Version="1.64.1" />
     <PackageVersion Include="Microsoft.AspNetCore.Mvc.Testing" Version="$(Net10)" />
   </ItemGroup>
 
