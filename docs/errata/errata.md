@@ -1,9 +1,10 @@
-**Errata** (2 items)
+**Errata** (3 items)
 
 If you find any mistakes, then please [raise an issue in this repository](https://github.com/markjprice/tools-skills-net10/issues) or email me at markjprice (at) gmail.com.
 
 - [Page 42 - Creating a class library for entity models using SQL Server](#page-42---creating-a-class-library-for-entity-models-using-sql-server)
 - [Page 264 - Documenting a Minimal API web service using OpenAPI](#page-264---documenting-a-minimal-api-web-service-using-openapi)
+- [Page 312 -  Salts](#page-312----salts)
 
 
 # Page 42 - Creating a class library for entity models using SQL Server
@@ -78,3 +79,9 @@ Step 6 should say, "After the call to `WithName`, add statements to further docu
 ```
 
 Step 8 should also be updated to show only the JSON document returned by the newer Microsoft OpenAPI package, not the legacy Swagger UI.
+
+# Page 312 -  Salts
+
+> Thanks to Phil aka [zkazz](https://github.com/zkazz) for raising [this issue on November 11, 2026](https://github.com/markjprice/tools-skills-net10/issues/5).
+
+In the note box, I gave two links to password statistics. The first is now broken but the other still works and gives you enough of an idea to continue to make the point.
